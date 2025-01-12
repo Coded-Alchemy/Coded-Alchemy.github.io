@@ -1,24 +1,29 @@
-import React from 'react';
-import {Routes, Route, Link} from 'react-router-dom';
+import {Routes, Route} from 'react-router-dom';
 import './App.css'
+import {Header} from "./components/header.tsx";
+import {Footer} from "./components/footer.tsx";
+import {Navigation} from "./components/navigation.tsx";
+import {HomePage} from "./pages/home.tsx";
+import {AboutPage} from "./pages/about.tsx";
+import {CertificationPage} from "./pages/certification.tsx";
 
-const Home: React.FC = () => <h1>Home Page</h1>;
+// This is the application entry point.
 
-const About: React.FC = () => <h1>About Page</h1>;
-
-function App() {
-
+export default function App() {
     return (
         <div className="flex items-center justify-center pt-16 pb-4">
-            <nav>
-                <Link to="/">Home</Link> | <Link to="/about">About</Link>
-            </nav>
-            <Routes>
-                <Route path="/" element={<Home/>}/>
-                <Route path="/about" element={<About/>}/>
-            </Routes>
+            <div className="flex-1 flex flex-col items-center gap-16 min-h-0">
+                <Header/>
+                <Navigation/>
+                <main>
+                    <Routes>
+                        <Route path="/" element={<HomePage/>}/>
+                        <Route path="/about" element={<AboutPage/>}/>
+                        <Route path="/certification" element={<CertificationPage/>}/>
+                    </Routes>
+                </main>
+                <Footer/>
+            </div>
         </div>
     )
 }
-
-export default App
