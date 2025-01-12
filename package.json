@@ -1,5 +1,5 @@
 {
-  "name": "my-react-router-app",
+  "name": "coded-alchemy.github.io",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -8,13 +8,15 @@
     "build": "tsc -b && vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "predeploy" : "npm run build",
-    "deploy" : "gh-pages -d dist"
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "react": "^18.3.1",
-    "react-dom": "^18.3.1"
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^7.1.1"
   },
+  "homepage": "https://Coded-Alchemy.github.io/coded-alchemy.github.io/",
   "devDependencies": {
     "@eslint/js": "^9.17.0",
     "@types/react": "^18.3.18",
