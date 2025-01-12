@@ -1,8 +1,8 @@
 import React from 'react';
 import {Routes, Route, Link} from 'react-router-dom';
 import './App.css'
-import {Header} from "../components/header.tsx";
-import {Footer} from "../components/footer.tsx";
+import {Header} from "./components/header.tsx";
+import {Footer} from "./components/footer.tsx";
 
 const Home: React.FC = () => <h1>Home Page</h1>;
 
