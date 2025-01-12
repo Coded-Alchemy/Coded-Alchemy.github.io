@@ -5,11 +5,11 @@ export function Navigation() {
         <div className="flex items-center  ">
             <nav className="flex items-center justify-center space-x-6">
                 {/* Home Link */}
-                <a href="/public" className="text-xl font-bold transition-transform duration-300 hover:scale-110">Home</a>
+                <a href="/home" className="text-xl font-bold transition-transform duration-300 hover:scale-110">Home</a>
 
                 {/* About Link */}
-                <a href="/about"
-                   className="text-xl font-bold transition-transform duration-300 hover:scale-110">About</a>
+                <a href="/about" className="text-xl font-bold transition-transform duration-300 hover:scale-110">About</a>
+
 
                  {/*Projects Dropdown with Accordion Animation */}
                 <div className="group relative">
