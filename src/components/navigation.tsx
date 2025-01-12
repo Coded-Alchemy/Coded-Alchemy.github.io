@@ -1,28 +1,30 @@
 // This file contains the applications main navigation component.
 
+import {Link} from "react-router-dom";
+
 export function Navigation() {
     return (
         <div className="flex items-center  ">
             <nav className="flex items-center justify-center space-x-6">
                 {/* Home Link */}
-                <a href="/home" className="text-xl font-bold transition-transform duration-300 hover:scale-110">Home</a>
+                <Link to={"/"} className="text-xl font-bold transition-transform duration-300 hover:scale-110">Home</Link>
 
                 {/* About Link */}
-                <a href="/about" className="text-xl font-bold transition-transform duration-300 hover:scale-110">About</a>
+                <Link to={"/about"} className="text-xl font-bold transition-transform duration-300 hover:scale-110">About</Link>
 
 
-                {/*Projects Dropdown with Accordion Animation */}
-                <div className="group relative">
-                    <h2 className="text-xl font-bold transition-transform duration-300 hover:scale-110 cursor-pointer">
-                        Projects
-                    </h2>
-                    {/* Dropdown Menu */}
-                    {/*<ProjectDropDownMenu/>*/}
-                </div>
+                 {/*Projects Dropdown with Accordion Animation */}
+                {/*<div className="group relative">*/}
+                {/*    <h2 className="text-xl font-bold transition-transform duration-300 hover:scale-110 cursor-pointer">*/}
+                {/*        Projects*/}
+                {/*    </h2>*/}
+                {/*    /!* Dropdown Menu *!/*/}
+                {/*    <ProjectDropDownMenu/>*/}
+                {/*</div>*/}
 
                 {/* Certification Link */}
-                <a href="/certification"
-                   className="text-xl font-bold transition-transform duration-300 hover:scale-110">Certification</a>
+                <Link to={"/certification"}
+                   className="text-xl font-bold transition-transform duration-300 hover:scale-110">Certification</Link>
 
                 {/* Blog Link */}
                 <a href="https://technofiles.hashnode.dev/" target="_blank" rel="noopener noreferrer"
