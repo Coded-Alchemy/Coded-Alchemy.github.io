@@ -19,7 +19,7 @@
 }
 
 .typewriter span {
-  border-right: 2px solid black; /* Typewriter cursor */
+  border-right: 2px solid white; /* Typewriter cursor */
   animation: blink 0.7s step-end infinite;
 }
 
@@ -28,6 +28,6 @@
     border-color: transparent;
   }
   50% {
-    border-color: black;
+    border-color: white;
   }
 }

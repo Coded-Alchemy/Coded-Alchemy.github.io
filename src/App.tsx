@@ -5,6 +5,7 @@ import {Footer} from "./components/footer.tsx";
 import {Navigation} from "./components/navigation.tsx";
 import {HomePage} from "./pages/home.tsx";
 import {AboutPage} from "./pages/about.tsx";
+import {CertificationPage} from "./pages/certification.tsx";
 
 // This is the application entry point.
 
@@ -18,6 +19,7 @@ export default function App() {
                     <Routes>
                         <Route path="/" element={<HomePage/>}/>
                         <Route path="/about" element={<AboutPage/>}/>
+                        <Route path="/certification" element={<CertificationPage/>}/>
                     </Routes>
                 </main>
                 <Footer/>
