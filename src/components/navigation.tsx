@@ -1,19 +1,17 @@
 // This file contains the applications main navigation component.
 
-import {Link} from "react-router-dom";
-
 export function Navigation() {
     return (
         <div className="flex items-center  ">
             <nav className="flex items-center justify-center space-x-6">
                 {/* Home Link */}
-                <Link to={"/home"} className="text-xl font-bold transition-transform duration-300 hover:scale-110">Home</Link>
+                <a href="/home" className="text-xl font-bold transition-transform duration-300 hover:scale-110">Home</a>
 
                 {/* About Link */}
-                <Link to={"/about"} className="text-xl font-bold transition-transform duration-300 hover:scale-110">About</Link>
+                <a href="/about" className="text-xl font-bold transition-transform duration-300 hover:scale-110">About</a>
 
 
-                 {/*Projects Dropdown with Accordion Animation */}
+                {/*Projects Dropdown with Accordion Animation */}
                 <div className="group relative">
                     <h2 className="text-xl font-bold transition-transform duration-300 hover:scale-110 cursor-pointer">
                         Projects
@@ -23,8 +21,8 @@ export function Navigation() {
                 </div>
 
                 {/* Certification Link */}
-                <Link to={"/certification"}
-                   className="text-xl font-bold transition-transform duration-300 hover:scale-110">Certification</Link>
+                <a href="/certification"
+                   className="text-xl font-bold transition-transform duration-300 hover:scale-110">Certification</a>
 
                 {/* Blog Link */}
                 <a href="https://technofiles.hashnode.dev/" target="_blank" rel="noopener noreferrer"

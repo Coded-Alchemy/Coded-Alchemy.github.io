@@ -7,10 +7,10 @@ export function CertificationPage() {
         "/img/thm_aoc.png",
         "img/critical_thinking_problem_solving.png",
         "/img/strategic_thinking.png",
-        "/public/img/how-to-be-more-strategic.png",
-        "/public/img/emotional_intelligence.png",
-        "/public/img/active_listening.png",
-        "/public/img/big_goals.png"
+        "/img/how-to-be-more-strategic.png",
+        "/img/emotional_intelligence.png",
+        "/img/active_listening.png",
+        "/img/big_goals.png"
     ];
 
     return (
@@ -20,7 +20,7 @@ export function CertificationPage() {
                     <Carousel useKeyboardArrows={true}>
                         {images.map((URL, index) => (
                             <div className="slide">
-                                <img alt="sample_file" src={URL} key={index}/>
+                                <img alt="Certification" src={URL} key={index}/>
                             </div>
                         ))}
                     </Carousel>
