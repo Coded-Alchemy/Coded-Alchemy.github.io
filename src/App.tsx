@@ -3,12 +3,12 @@ import {Routes, Route, Link} from 'react-router-dom';
 import './App.css'
 import {Header} from "./components/header.tsx";
 import {Footer} from "./components/footer.tsx";
-
-const Home: React.FC = () => <h1>Home Page</h1>;
+import {HomePage} from "./pages/home.tsx";
 
 const About: React.FC = () => <h1>About Page</h1>;
+// This is the application entry point.
 
-function App() {
+export default function App() {
     return (
         <div className="flex items-center justify-center pt-16 pb-4">
             <div className="flex-1 flex flex-col items-center gap-16 min-h-0">
@@ -18,7 +18,7 @@ function App() {
                 </nav>
                 <main>
                     <Routes>
-                        <Route path="/" element={<Home/>}/>
+                        <Route path="/" element={<HomePage/>}/>
                         <Route path="/about" element={<About/>}/>
                     </Routes>
                 </main>
@@ -27,5 +27,3 @@ function App() {
         </div>
     )
 }
-
-export default App
