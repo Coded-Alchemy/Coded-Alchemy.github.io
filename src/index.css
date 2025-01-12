@@ -1,3 +1,6 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
@@ -65,5 +68,30 @@ button:focus-visible {
   }
   button {
     background-color: #f9f9f9;
+  }
+}
+
+
+.typewriter {
+  display: block;
+  width: 100%; /* Ensures it takes up the full width of the parent */
+  min-height: 1em; /* Prevents height from shrinking */
+  text-align: center; /* Centers the text */
+  white-space: nowrap; /* Keeps text in one line */
+  overflow: hidden; /* Hides any overflow during typing */
+  border-right: 2px solid transparent; /* For optional typewriter cursor */
+}
+
+.typewriter span {
+  border-right: 2px solid white; /* Typewriter cursor */
+  animation: blink 0.7s step-end infinite;
+}
+
+@keyframes blink {
+  from, to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: white;
   }
 }
