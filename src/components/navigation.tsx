@@ -7,23 +7,23 @@ export function Navigation() {
         <div className="flex items-center  ">
             <nav className="flex items-center justify-center space-x-6">
                 {/* Home Link */}
-                <Link to={"/home"} className="text-xl font-bold transition-transform duration-300 hover:scale-110">Home</Link>
+                <Link to={"/"} className="text-xl font-bold transition-transform duration-300 hover:scale-110">Home</Link>
 
                 {/* About Link */}
-                <Link to={"/about"} className="text-xl font-bold transition-transform duration-300 hover:scale-110">About</Link>
+                <Link to={"about"} className="text-xl font-bold transition-transform duration-300 hover:scale-110">About</Link>
 
 
                  {/*Projects Dropdown with Accordion Animation */}
-                <div className="group relative">
-                    <h2 className="text-xl font-bold transition-transform duration-300 hover:scale-110 cursor-pointer">
-                        Projects
-                    </h2>
-                    {/* Dropdown Menu */}
-                    {/*<ProjectDropDownMenu/>*/}
-                </div>
+                {/*<div className="group relative">*/}
+                {/*    <h2 className="text-xl font-bold transition-transform duration-300 hover:scale-110 cursor-pointer">*/}
+                {/*        Projects*/}
+                {/*    </h2>*/}
+                {/*    /!* Dropdown Menu *!/*/}
+                {/*    <ProjectDropDownMenu/>*/}
+                {/*</div>*/}
 
                 {/* Certification Link */}
-                <Link to={"/certification"}
+                <Link to={"certification"}
                    className="text-xl font-bold transition-transform duration-300 hover:scale-110">Certification</Link>
 
                 {/* Blog Link */}
