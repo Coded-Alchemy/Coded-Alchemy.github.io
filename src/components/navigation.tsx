@@ -10,7 +10,7 @@ export function Navigation() {
                 <Link to={"/"} className="text-xl font-bold transition-transform duration-300 hover:scale-110">Home</Link>
 
                 {/* About Link */}
-                <Link to={"/about"} className="text-xl font-bold transition-transform duration-300 hover:scale-110">About</Link>
+                <Link to={"about"} className="text-xl font-bold transition-transform duration-300 hover:scale-110">About</Link>
 
 
                  {/*Projects Dropdown with Accordion Animation */}
@@ -23,7 +23,7 @@ export function Navigation() {
                 {/*</div>*/}
 
                 {/* Certification Link */}
-                <Link to={"/certification"}
+                <Link to={"certification"}
                    className="text-xl font-bold transition-transform duration-300 hover:scale-110">Certification</Link>
 
                 {/* Blog Link */}

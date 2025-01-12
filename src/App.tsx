@@ -18,8 +18,8 @@ export default function App() {
                 <main>
                     <Routes>
                         <Route path="/" element={<HomePage/>}/>
-                        <Route path="/about" element={<AboutPage/>}/>
-                        <Route path="/certification" element={<CertificationPage/>}/>
+                        <Route path="about" element={<AboutPage/>}/>
+                        <Route path="certification" element={<CertificationPage/>}/>
                     </Routes>
                 </main>
                 <Footer/>
