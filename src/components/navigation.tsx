@@ -9,6 +9,9 @@ export function Navigation() {
                 {/* Home Link */}
                 <Link to={"/"} className="text-xl font-bold transition-transform duration-300 hover:scale-110">Home</Link>
 
+                {/* TicTacToe Link */}
+                <Link to={"tictactoe"} className="text-xl font-bold transition-transform duration-300 hover:scale-110">TicTacToe</Link>
+
                 {/* About Link */}
                 <Link to={"about"} className="text-xl font-bold transition-transform duration-300 hover:scale-110">About</Link>
 
